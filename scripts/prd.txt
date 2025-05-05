@@ -1,0 +1,107 @@
+<context>
+# Overview  
+UpCount is a productivity and goal-tracking app designed to help users monitor and manage their efforts toward personal goals. It solves the problem of inconsistent progress tracking by providing a simple, intuitive platform for logging and visualizing progress. UpCount is perfect for individuals aiming to build habits, achieve fitness milestones, or improve productivity. Its core value lies in making progress tangible through clear data and motivational visuals.
+
+# Core Features  
+- **Goal Tracking**  
+  - Allows users to set goals (e.g., number of push-ups, hours of study).  
+  - Important because it gives users a tangible target to aim for.  
+  - Works by letting users define specific goals and track progress toward them.
+
+- **Effort Logging**  
+  - Users can log efforts in real time (e.g., entering the number of push-ups completed).  
+  - Important as it ensures accurate tracking of incremental progress.  
+  - Works through a user-friendly input interface optimized for fast and easy logging.
+
+- **Progress Visualizations**  
+  - Show total effort and trends over time (e.g., weekly, monthly progress charts).  
+  - Important for motivating users by making progress visible.  
+  - Works by aggregating logged data and presenting it in visual formats like graphs and charts.
+
+- **Encouraging User Interface**  
+  - Aesthetic and friendly design to encourage consistent use.  
+  - Important for fostering long-term engagement and making the app enjoyable to use.  
+  - Works by leveraging popular UI/UX frameworks and carefully chosen design elements.
+
+# User Experience  
+- **User Personas**  
+  - Fitness enthusiasts tracking workouts.  
+  - Students monitoring study hours.  
+  - Hobbyists building skills through consistent practice.  
+
+- **Key User Flows**  
+  1. Set up a goal (e.g., "Do 500 push-ups in a month").  
+  2. Log progress (e.g., "Just did 20 push-ups").  
+  3. Review progress (e.g., "See how many push-ups I’ve done this week").  
+
+- **UI/UX Considerations**  
+  - Design with a motivational and friendly vibe: use warm colors, progress badges, and animations.  
+  - Optimize for quick data entry and easy goal creation.  
+  - Ensure responsive layouts for mobile devices using React Native.
+
+</context>
+<PRD>
+# Technical Architecture  
+- **System Components**  
+  - Frontend: React Native app using TypeScript/JavaScript.  
+  - Backend: AWS serverless architecture (e.g., AWS Lambda, DynamoDB, API Gateway).  
+  - Data Visualization: Use libraries like Victory Charts or Recharts for graphs.  
+
+- **Data Models**  
+  - User model: Tracks user profiles and preferences.  
+  - Goal model: Stores goals (type, target value, deadline).  
+  - Log model: Records incremental efforts (e.g., timestamps, values).  
+
+- **APIs and Integrations**  
+  - RESTful APIs for CRUD operations on goals and logs.  
+  - Integration with AWS Cognito for user authentication.  
+
+- **Infrastructure Requirements**  
+  - AWS resources set up using Terraform:  
+    - DynamoDB for data storage.  
+    - Lambda functions for backend logic.  
+    - API Gateway for exposing endpoints.  
+    - S3 for storing static assets if required.  
+
+# Development Roadmap  
+- **Phase 1: MVP Requirements**  
+  - User authentication (AWS Cognito).  
+  - Goal creation and management.  
+  - Effort logging with time stamps.  
+  - Basic progress visualization (weekly and total stats).  
+  - React Native frontend with core UI/UX.  
+
+- **Phase 2: Future Enhancements**  
+  - Advanced visualizations (e.g., trends, heatmaps).  
+  - Push notifications for reminders and milestones.  
+  - Social sharing features (e.g., share achievements with friends).  
+  - Gamification elements (e.g., badges, streaks).  
+  - Offline logging with sync capabilities.  
+
+# Logical Dependency Chain  
+- Start with backend setup for user authentication and data storage.  
+- Develop frontend with basic goal creation and logging features.  
+- Implement progress visualization and ensure it integrates with backend data.  
+- Gradually add advanced features like notifications and gamification.
+
+# Risks and Mitigations  
+- **Technical Challenges**  
+  - AWS serverless complexity: Mitigate by using Terraform for structured resource setup.  
+  - Data visualization performance: Use lightweight charting libraries optimized for mobile.  
+
+- **MVP Scope**  
+  - Risk of over-scoping: Focus on core features like logging and basic visualization.  
+
+- **Resource Constraints**  
+  - Limited development time: Use popular frameworks (e.g., React Native, Expo) to speed up development.  
+
+# Appendix  
+- **Research Findings**  
+  - Habit-building apps succeed when they focus on simplicity and motivation.  
+  - Visual feedback in the form of charts and badges drives user engagement.  
+
+- **Technical Specifications**  
+  - Frontend: React Native, Expo, TypeScript/JavaScript.  
+  - Backend: AWS (Cognito, Lambda, DynamoDB, API Gateway).  
+  - Infrastructure setup: Terraform for AWS resources.  
+</PRD>
