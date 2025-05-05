@@ -1,0 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+This project put project management related files and directories at the root level.
+
+All the application code resides in the subdiretory "UpCount". So put all application related files into that subfolder.
