@@ -1,0 +1,9 @@
+{
+  "name": "get-user-lambda",
+  "version": "1.0.0",
+  "description": "Lambda function to get user details",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1399.0"
+  }
+}

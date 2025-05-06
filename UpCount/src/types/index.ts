@@ -7,7 +7,9 @@
 export interface User {
   userId: string; // Unique user identifier (was 'id')
   email: string;
+  name?: string; // User's full name
   displayName?: string; // Optional display name (was 'username')
+  profileImage?: string; // URL to user's profile image
   createdAt: string;
   updatedAt: string;
 }

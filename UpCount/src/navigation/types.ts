@@ -15,6 +15,7 @@ export type AuthStackParamList = {
   Login: undefined;
   SignUp: undefined;
   ForgotPassword: undefined;
+  ConfirmSignUp: { username: string };
 };
 
 // Goal detail stack navigator types
